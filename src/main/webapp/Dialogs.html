@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JQuery UI Dialogs</title>
+	<link rel="stylesheet" href="css/jquery.ui.all.css">
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/ui/jquery.ui.core.js"></script>
+	<script src="scripts/ui/jquery.ui.widget.js"></script>
+	<script src="scripts/ui/jquery.ui.mouse.js"></script>
+	<script src="scripts/ui/jquery.ui.draggable.js"></script>
+	<script src="scripts/ui/jquery.ui.position.js"></script>
+	<script src="scripts/ui/jquery.ui.resizable.js"></script>
+	<script src="scripts/ui/jquery.ui.button.js"></script>
+	<script src="scripts/ui/jquery.ui.dialog.js"></script>	
+	<script src="scripts/ui/jquery.ui.effect.js"></script>
+	<script src="scripts/ui/jquery.ui.effect-blind.js"></script>
+	<script src="scripts/ui/jquery.ui.effect-explode.js"></script>
+	<script src="scripts/mainDialogs.js"></script>
+</head>
+<body>
+<div id="dialog" title="Demo1: Basic info dialog">
+	<p>This is the default dialog for displaying information. It is moveable, resizable and can be closed.</p>
+</div>
+<div id="dialog2" title="Demo2: Basic info dialog">
+	<p>This is an animated dialog which is useful for displaying information. It is moveable, resizable and can be closed.</p>
+</div>
+<div id="dialog3" title="Demo3: Confirmationbox">
+	<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Are you sure to reset this demo?</p>
+</div>
+<div id="dialog4" title="Provide your name.">
+<p class="validateTips"></p>
+	<form>
+	<fieldset>
+		<label for="name">Name</label>
+		<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+	</fieldset>
+	</form>
+</div>
+
+
+
+<div class="demo-description">
+<p>Demo 1: The basic dialog window is an overlay positioned within the viewport and is protected from page content (like select elements) shining through with an iframe.</p>
+<p>Demo 2: T1 with some annimation on close.</p>
+<p>Demo 3: Form input dialog.</p>
+<p>Demo 4: Confirmation dialog.</p>
+</div>
+<button id="opener">Other dialog</button><br/><br/>
+<button id="opener3">Input dialog</button><br/><br/>
+<button id="opener2">Reset demo</button>
+
+<div id="names-contain" class="ui-widget">
+	<h4>Registered names:</h4>
+	<table id="names" class="ui-widget ui-widget-content">
+		<thead>
+			<tr class="ui-widget-header "><th>Name</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>Demo</td></tr>
+		</tbody>
+	</table>
+</div>
+
+</body>
+</html>
